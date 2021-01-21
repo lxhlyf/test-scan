@@ -1,0 +1,20 @@
+<!--scan.wxml-->
+<view class="scan-view">
+  <view class='scan-border'>
+    
+    <camera class='scan-camera' mode="normal" binderror="error" frame-size='large'>
+      <!-- <cover-image class='cover-corner cover-left-top' src='/images/left-top.png'></cover-image>
+      <cover-image class='cover-corner cover-right-top' src='/images/right-top.png'></cover-image>
+      <cover-image class='cover-corner cover-left-bottom' src='/images/left-bottom.png'></cover-image>
+      <cover-image class='cover-corner cover-right-bottom' src='/images/right-bottom.png'></cover-image> -->
+      
+      <!-- <cover-view class='scan-animation' animation="{{animation}}"></cover-view> -->
+    </camera> 
+    <!-- 这里可以处理其他内容 -->
+
+    <view class="scan" bindtap="takePhoto">拍照</view>
+    <view style="margin-top:40rpx">预览</view>
+    <image mode="widthFix" src="{{src}}"></image>
+  </view>
+</view>
+ 

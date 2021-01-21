@@ -1,0 +1,6 @@
+<view class="video">
+  <camera wx:if="{{videoSrc.length === 0}}" device-position="font" flash="off" binderror="error" style="width: {{cameraWidth}}px;height: 442rpx;">
+  </camera>
+  <video style="width: {{cameraWidth}}px; height: 442rpx;" wx:else src="{{videoSrc}}" controls></video>
+</view>
+  <view class="btn" id='btn-photo' bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindlongpress="handleLongPress">按住录制</view>
